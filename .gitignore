@@ -1,0 +1,20 @@
+# Java
+*.class
+*.jar
+*.war
+*.log
+
+# Maven
+target/
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
