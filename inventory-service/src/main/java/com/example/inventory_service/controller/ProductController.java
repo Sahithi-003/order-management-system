@@ -31,7 +31,9 @@ public class ProductController {
     public ResponseEntity<String> reserve(@RequestParam Long id,@RequestParam int quantity){
         boolean success= productService.reserveProduct(id,quantity);
         if (success){
-        return ResponseEntity.ok("Reserved");}else {
+            return ResponseEntity.ok("Reserved");
+        }
+        else {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST)
                     .body("Insufficient quantity");
         }
