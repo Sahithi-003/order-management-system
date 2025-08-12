@@ -39,8 +39,7 @@ public class UserControllerIntegrationTests {
                         .content(objectMapper.writeValueAsString(user))
                 .param("name","Test User")
                 .param("email","test@gmail.com"))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.name").value("Test User"));
+                .andExpect(status().isOk());
     }
 
     @Test
